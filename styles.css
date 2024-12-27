@@ -1,0 +1,140 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background-color: #f4f4f9;
+  color: #2b2d42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2b2d42;
+  font-weight: bold;
+}
+
+.formatted-text {
+  font-size: 1rem;
+  color: #8d99ae;
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 1.6;
+  white-space: pre-wrap; /* Preserve the formatting in your text */
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  margin-left: 6px;
+  color: #2b2d42;
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #8d99ae;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #f77f00;
+  box-shadow: 0 0 5px rgba(247, 127, 0, 0.5);
+}
+
+button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #f77f00; /* Naranja suave */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #f89b33; /* Tono más claro de naranja */
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #d97200; /* Tono más oscuro de naranja */
+  transform: translateY(0);
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2b2d42;
+  text-align: center;
+  background-color: #edf2f4;
+  border-radius: 8px;
+  padding: 10px;
+  display: inline-block;
+  min-width: 200px;
+  word-wrap: break-word;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Container Styling */
+.function-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.function-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  input[type="text"],
+  button {
+    font-size: 1.1rem;
+  }
+
+  .formatted-text {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Phone Check</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+    <!-- US Phone Check -->
+    <div class="function-container">
+        <h2>US Phone Check</h2>
+        <p class="formatted-text">
+Comprobador de formato válido de teléfono de EEUU.
+          
+Notas sobre el formato:
+
+    -Puede o no tener un 1 al principio como código de país. 
+    -Puede o no tener los tres primeros dígitos entre paréntesis (código de área).
+    -Los bloques de dígitos pueden o no estar separados por guiones o espacios:
+
+        Ejemplos:
+            555-555-5555
+            (555) 555-5555
+            1 555 555 5555
+
+        ·No debe haber más de un separador consecutivo ni al final del número.
+
+    -No debe haber caracteres especiales que no sean números, guiones o paréntesis.
+        </p>
+        <label for="phone-input">Introduce un número de teléfono:</label>
+        <input type="text" id="user-input" placeholder="Teléfono a comprobar...">
+        <button onclick="checkPhone()" id="check-btn">Validar</button>
+        <button onclick="clearResult()" id="clear-btn">Limpiar</button>
+        <div class="result" id="results-div"></div>
+    </div>   
+<script src="script.js"></script>
